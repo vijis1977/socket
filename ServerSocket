@@ -23,7 +23,7 @@ namespace SocketServer
 				Socket clientsock = servsock.Accept();
 
 				string filename = "test.csv";
-				string filepath = "/home/vijay/learning/socket/data";
+				string filepath = "/socket/data";
 
 				byte[] filenameByte = Encoding.ASCII.GetBytes(filename);
 				byte[] fileData = File.ReadAllBytes(filepath + "/" + filename);
